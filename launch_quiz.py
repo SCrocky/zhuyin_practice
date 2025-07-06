@@ -20,7 +20,7 @@ def which_sound(char: str, values: dict) -> bool:
         is_correct = True
     elif len(answer) == 1 and len(attempt) == 2 and attempt[0] == answer:
         is_correct = True
-    elif attempt in answer:
+    elif attempt and attempt in answer:
         is_correct = True
     else:
         print(f"\nWrong! The correct answer was: {answer}")

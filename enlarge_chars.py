@@ -1,5 +1,8 @@
+import os
 from PIL import Image, ImageDraw, ImageFont
 from io import BytesIO
+
+dir_path = os.path.dirname(os.path.abspath(__file__))
 
 
 def print_large_char(char, size=56):
@@ -12,7 +15,7 @@ def print_large_char(char, size=56):
         size (int): The desired font size in points, which affects output dimensions.
     """
 
-    font_path = "fonts/NotoSerifCJKtc-Regular.otf"
+    font_path = os.path.join(dir_path, "fonts", "NotoSerifCJKtc-Regular.otf")
     try:
         # Load the font. The size here is the pixel size for rendering.
         font = ImageFont.truetype(font_path, size)

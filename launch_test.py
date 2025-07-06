@@ -1,9 +1,12 @@
+import os
 import click
 import json
 import random
 from enlarge_chars import print_large_char
 
-with open("bpmf.json") as reader:
+dir_path = os.path.dirname(os.path.abspath(__file__))
+
+with open(os.path.join(dir_path, "bpmf.json")) as reader:
     bpmf: dict[str, dict] = json.load(reader)
 
 

@@ -1,4 +1,4 @@
-# zhuyin_practice
+# zhuyin/bopomofo practice
 
 A repo to test your knowledge on the Zhuyin characters
 
